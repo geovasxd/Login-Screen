@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="login-form-wrap">
+          <form className='login-form'>
+          <img src='https://mentorprofissional.com.br/wp-content/uploads/2018/12/senai-1.png' alt='' width="300" height="60"></img>
+
+            <input type='email' name='email' placeholder='Email' required/>
+            <input type='password' name='password' placeholder='Senha' required/>
+
+            <button type='submit' className='btn-login'>Entrar</button>
+          </form>
+        </div>
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
